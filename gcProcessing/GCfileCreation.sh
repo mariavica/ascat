@@ -16,7 +16,7 @@ done
 
 wait
 
-cat *.gcContent > ${output}".combined.gcContent"
+cat ${output}*.gcContent > ${output}".combined.gcContent"
 
 R --no-save --args ${output}".combined.gcContent" "GC_"${output}".txt" <createGCcontentFile.R
 
